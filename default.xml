@@ -10,18 +10,19 @@
   <remote name="polly" fetch="https://github.com/ruslo"/>
   <remote name="seL4" fetch="../seL4"/>
   <remote name="zeromq" fetch="https://github.com/zeromq"/>
+  <remote fetch="https://github.com/Ivan-Velickovic" name="Ivan-Velickovic"/>
   
   <default remote="seL4" revision="master"/>
   
   <project name="camkes-tool.git" path="projects/camkes-tool" revision="bceec3634b2c107c3b8136d2128b0ad94f1accac" upstream="master" dest-branch="master">
     <linkfile src="docs/index.md" dest="camkes_README.md"/>
   </project>
-  <project name="camkes-vm-examples.git" path="projects/vm-examples" revision="c6dec85b32bbf082876280e4fb1fc42acbdf5b26" upstream="master" dest-branch="master">
+  <project name="camkes-vm-examples.git" remote="Ivan-Velickovic" path="projects/vm-examples" revision="imx8mm-evk" upstream="master" dest-branch="master">
     <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
   </project>
-  <project name="camkes-vm-images.git" path="projects/camkes-vm-images" revision="69af5316aa39d43d38070984338b334083d2065d" upstream="master" dest-branch="master"/>
+  <project name="camkes-vm-images.git" remote="Ivan-Velickovic" path="projects/camkes-vm-images" revision="imx8mm-evk" upstream="master" dest-branch="master"/>
   <project name="camkes-vm-linux.git" path="projects/vm-linux" revision="3eafe89fffc3decb385c1ec74c2d744a09b6327e" upstream="master" dest-branch="master"/>
-  <project name="camkes-vm.git" path="projects/vm" revision="39734d70d38af597e459f4923c75db95508d9661" upstream="master" dest-branch="master">
+  <project name="camkes-vm.git" remote="Ivan-Velickovic" path="projects/vm" revision="imx8mm-evk" upstream="master" dest-branch="master">
     <linkfile src="README.md" dest="README.md"/>
   </project>
   <project name="capdl.git" path="projects/capdl" revision="e6d99092c0d179c0370feaa2a87b0e7a445b8526" upstream="master" dest-branch="master"/>
